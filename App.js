@@ -14,7 +14,7 @@ const heading = React.createElement(
     React.createElement("h4", { id: "headingH2" }, "hello from h4"),
   ]
 );
-console.log(React);
+console.log(ReactDOM);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 console.log(ReactDOM);
 

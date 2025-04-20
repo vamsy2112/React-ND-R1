@@ -1,0 +1,22 @@
+{
+  "name": "react-nd",
+  "version": "1.0.0",
+  "description": "The first lesson",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamsy2112/React-ND-R1.git"
+  },
+  "author": "vamsy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamsy2112/React-ND-R1/issues"
+  },
+  "homepage": "https://github.com/vamsy2112/React-ND-R1#readme",
+  "dependencies": {
+    "parcel": "^2.14.4"
+  }
+}
