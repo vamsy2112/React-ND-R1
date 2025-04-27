@@ -2,9 +2,9 @@
   "name": "react-nd",
   "version": "1.0.0",
   "description": "The first lesson",
-  "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/vamsy2112/React-ND-R1#readme",
   "dependencies": {
-    "parcel": "^2.14.4"
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.2"
   }
 }
