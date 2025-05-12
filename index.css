@@ -77,3 +77,13 @@
   background-color: #e0e0e0;
   width: 60px;
 }
+
+.userInfoClass {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.user-info {
+  border: 1px solid black;
+  margin: 5px;
+}
