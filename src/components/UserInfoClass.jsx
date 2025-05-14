@@ -16,6 +16,15 @@ class UserInfoClass extends React.Component {
         <h1>Hello from userInfoClass component </h1>
         <h3>hello {name}</h3>
         <p>count is: {count}</p>
+        <button
+          onClick={() => {
+            this.setState({
+              count: count + 1,
+            });
+          }}
+        >
+          Class increment
+        </button>
       </div>
     );
   }

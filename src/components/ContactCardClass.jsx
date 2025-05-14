@@ -8,11 +8,21 @@ class ContactCardClass extends React.Component {
     };
   }
   render() {
+    const { count } = this.state;
     return (
       <div>
         <h1>Hello from contact card class comp</h1>
         <p>hello {this.props.name}</p>
-        <p>count is : {this.state.count}</p>
+        <p>count is : {count}</p>
+        <button
+          onClick={() => {
+            this.setState({
+              count: count + 1,
+            });
+          }}
+        >
+          increment class btn
+        </button>
       </div>
     );
   }
