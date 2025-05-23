@@ -66,9 +66,19 @@
 - constructor receives props, this creates an instance of comp
 - super method is compulsory if constructor is defined because it calls the constructor of parent class, in this case, it is rect.compo
 - super isn't compulsory if there is no constructor defined.
-- oomit the constructor if you dn need to bind the events, dn need to deal with a state.
+- omit the constructor if you dn need to bind the events, dn need to deal with a state.
 - if no constructor, then state can be called as below:
 - ////...extends react.comp
   state = {
   // state variables go here..
   }
+- how to update a state?
+- have to pass this.setState({}) function to onClick method, which accepts an obj.
+- Inside this, we neeed to update the state.
+- lifecycle methods:
+- componentDidMount is used to make api calls. its written b/w constructor and render methods because it is called at last.
+- componentDidUpdate is called after every render.
+- componentWillUnmount will be called when we move to other page or other component.
+- the prob with an SPA is if i write any setInterval in componentDidMount and move to some other comp, then also the setInterval will keep on calling as the page isnt getting refreshed. Instead, we just moving to some other comp.
+- Hence, its a must that we should always clear the setInterval using this.timer as reference in class comp and const timer in func comp. This will make sure that the timer doesnt actually keep on running even if the comp changes, leading to performance improvement.
+- In func components, we can actually do componentWillUnmount by returning a func inside useEffect.

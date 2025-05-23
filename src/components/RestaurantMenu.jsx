@@ -4,7 +4,7 @@ import Shimmer from "./Shimmer";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
-  console.log(resId);
+  // console.log(resId);
   const [resInfo, setresInfo] = useState(null);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const RestaurantMenu = () => {
         "&catalog_qa=undefined&submitAction=ENTER"
     );
     const result = await data.json();
-    console.log(result);
+    // console.log(result);
     setresInfo(result?.data);
   };
 

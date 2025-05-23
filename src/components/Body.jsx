@@ -8,11 +8,11 @@ const Body = () => {
   const [filteredListCopy, setFilteredListCopy] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  console.log("body rendered");
+  // console.log("body rendered");
 
   useEffect(() => {
     fetchData();
-    console.log("useEffect rendered");
+    // console.log("useEffect rendered");
   }, []);
 
   const fetchData = async () => {
@@ -51,14 +51,14 @@ const Body = () => {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        {console.log(searchText)}
+        {/* {console.log(searchText)} */}
         <button
           className="search-btn"
           onClick={() => {
             const searchedResList = filteredList?.filter((res) => {
               return res?.info?.name?.toLowerCase()?.includes(searchText);
             });
-            console.log(searchedResList);
+            // console.log(searchedResList);
             setFilteredListCopy(searchedResList);
           }}
         >
